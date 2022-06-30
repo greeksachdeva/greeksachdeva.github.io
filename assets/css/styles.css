@@ -13,9 +13,9 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
+  --first-hue: 207;
+  --sat: 90%;
+  --lig: 54%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
@@ -339,6 +339,7 @@ body.light-theme{
 }
 .home__img{
   width: 160%;
+  /* height: auto; */
 }
 
 .home__handle{
@@ -584,6 +585,7 @@ color: var(--first-color);
 /* Services modal */
 .services__modal{
   inset: 0;
+  justify-content: center;
   position: fixed;
   background-color: hsl(var(--second-hue), 28%, 16%,.7);
   padding: 2rem 1rem;
@@ -596,6 +598,7 @@ color: var(--first-color);
 
 .services__modal-content{
   position: relative;
+  /* height:auto; */
   background-color: var(--body-color);
   padding: 4.5rem 1.5rem 2.5rem ;
   border-radius: 1.5rem;
@@ -1074,7 +1077,7 @@ display: inline-flex;
   }
 
   .home__img{
-    width: 220px;
+    width: 295px;
   }
 
   .home__social-link{
@@ -1120,8 +1123,8 @@ display: inline-flex;
   }
 
   .services__container{
-    grid-template-columns: repeat(2,192px);
-    
+    grid-template-columns: repeat(3,192px);
+    /* justify-content: center; */
     column-gap: 3rem;
   }
 
@@ -1170,3 +1173,6 @@ display: inline-flex;
 
 
 }
+
+
+@media screen and (width: 992px){
